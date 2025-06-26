@@ -1,0 +1,61 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+node_modules
+.pnp
+.pnp.js
+
+# testing
+coverage
+
+# next.js build output
+.next
+.swc
+_static
+out
+dist
+
+# Keep Docker and Nginx configurations
+!build/docker
+!build/nginx
+
+# Ignore build artifacts
+build/*
+!build/docker/
+!build/nginx/
+
+# environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# misc
+.DS_Store
+.vercel
+.netlify
+.unimportedrc.json
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# archives
+*.zip
+*.tar.gz
+*.tgz
+
+# IDE
+.idea
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store*
+ehthumbs.db
+Icon?
+Thumbs.db
+.qodo
